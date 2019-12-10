@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Link from \"next/link\";\nimport \"./Header.scss\";\n\nvar Header = function Header(props) {\n  return __jsx(Link, {\n    href: \"/\"\n  }, __jsx(\"div\", {\n    className: \"Header\"\n  }, props.appTitle));\n};\n\nexport default Header;","map":null,"metadata":{},"sourceType":"module"}

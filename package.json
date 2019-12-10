@@ -1,19 +1,29 @@
 {
-  "name": "hello-next",
+  "name": "dataline",
   "version": "1.0.0",
-  "description": "",
+  "description": "An official company page of Dataline Group Oy.",
   "main": "index.js",
   "scripts": {
     "build": "next build",
     "export": "next export"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nextjs",
+    "github",
+    "company",
+    "spa",
+    "pwa"
+  ],
+  "author": "Timo Anttila <info@tuspe.com>",
   "license": "ISC",
   "dependencies": {
-    "isomorphic-unfetch": "^3.0.0",
+    "@zeit/next-sass": "^1.0.1",
     "next": "^9.0.0",
+    "node-sass": "^4.13.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "sass-loader": "^8.0.0"
   }
 }
