@@ -1,25 +1,26 @@
 {
-  "name": "dataline",
-  "version": "1.0.0",
-  "description": "An official company page of Dataline Group Oy.",
-  "main": "index.js",
-  "scripts": {
-    "build": "next build",
-    "export": "next export",
-    "run": "next run"
-  },
-  "keywords": [
-    "nextjs",
-    "github",
-    "company",
-    "spa",
-    "pwa"
-  ],
-  "author": "Timo Anttila <info@tuspe.com>",
-  "private": false,
-  "dependencies": {
-    "next": "9.1.5",
-    "react": "16.12.0",
-    "react-dom": "16.12.0"
-  }
+	"name": "dataline",
+	"version": "1.0.0",
+	"description": "An official company page of Dataline Group Oy.",
+	"main": "index.js",
+	"scripts": {
+		"build": "next build",
+		"export": "next export",
+		"run": "next run",
+		"dev": "next"
+	},
+	"keywords": [
+		"nextjs",
+		"github",
+		"company",
+		"spa",
+		"pwa"
+	],
+	"author": "Timo Anttila <info@tuspe.com>",
+	"private": false,
+	"dependencies": {
+		"next": "9.1.5",
+		"react": "16.12.0",
+		"react-dom": "16.12.0"
+	}
 }
