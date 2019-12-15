@@ -46,7 +46,7 @@ const Home = () => (
             <div id="caption" className="abs cell">
                 <h1>Entistä parempi verkkokauppa</h1>
                 <div id="sum" className="mb-4">Tarjoamme juuri sinulle parhaat verkkokaupparatkaisut kotimaiseen ja kansainväliseen kaupankäyntiin erittäin kilpailukykyisellä hinnalla ja monen vuoden osaamisella.</div>
-                <p><a className="btn inl" href="tel:+358400273150" title="Keskutellaan miten voimme parantaa teidän verkkosivustoa" rel="nofollow noopener">Soita meille</a><a className="btn inl" href="mailto:asiakaspalvelu@molentum.fi" title="Lähetä rohkeasti sähköpostia ja sovitaan tapaaminen" rel="nofollow noopener">Lähetä viesti</a></p>
+                <p><a className="btn inl" href="tel:+358400273150" title="Keskutellaan miten voimme parantaa teidän verkkosivustoa" rel="nofollow noopener">Soita meille</a><a className="btn inl" href="mailto:myynti@dataline.fi" title="Lähetä rohkeasti sähköpostia ja sovitaan tapaaminen" rel="nofollow noopener">Lähetä viesti</a></p>
             </div>
         </div>
 
@@ -100,7 +100,7 @@ const Home = () => (
                     <div id="molentum" className="col-6 r6 tr mb-4">
                         <h3><a href="https://molentum.fi/" target="_blank" title="Molentum Oy - paremman palvelun digitoimisto" rel="noopener">Mika Lähteenmäki</a></h3>
                         <h4>Myynti ja asiakaspalvelu</h4>
-                        <p><a href="tel:+358400273150" rel="nofollow noopener">0400 273 150</a><br/><a href="mailto:asiakaspalvelu@molentum.fi" rel="nofollow noopener">asiakaspalvelu@molentum.fi</a></p>
+                        <p><a href="tel:+358400273150" rel="nofollow noopener">0400 273 150</a><br/><a href="mailto:myynti@dataline.fi" rel="nofollow noopener">myynti@dataline.fi</a></p>
                     </div>
                     <div id="tuspe" className="col-6 r6 mb-4">
                         <h3><a href="https://tuspe.com/" target="_blank" title="Tuspe Design - verkkosivut ja verkkokaupat yritykselle" rel="noopener">Timo Anttila</a></h3>
