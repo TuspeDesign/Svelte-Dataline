@@ -15,8 +15,8 @@ const Home = () => (
             <meta property="og:image" content="https://www.dataline.fi/assets/dataline-verkkokauppa-2k.jpg"/>
             <meta property="og:image:alt" content="Verkkokauppa yritykselle ja kotisivut urheiluseuralle"/>
             <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:description" content="{{ site.data.home_fi.desc }}"/>
-            <meta name="twitter:title" content="{{ site.data.home_fi.meta_title }}"/>
+            <meta name="twitter:description" content="Verkkokauppa yritykselle kotimaiseen ja kansainväliseen kaupankäyntiin sekä joustavat kotisivut urheiluseuralle."/>
+            <meta name="twitter:title" content="Verkkokauppa yritykselle ja kotisivut urheiluseuralle"/>
             <meta name="twitter:site" content="@tuspedesign"/>
             <meta name="twitter:creater" content="@tewdin"/>
             <meta name="twitter:url" content="https://www.dataline.fi/"/>
