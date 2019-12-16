@@ -4,8 +4,8 @@ import Head from 'next/head'
 const Home = () => (
     <div>
         <Head>
-            <title>Verkkokauppa yritykselle ja kotisivut urheiluseuralle</title>
             <meta name="theme-color" content="#45558d"/>
+            <title>Verkkokauppa yritykselle ja kotisivut urheiluseuralle</title>
             <meta name="description" content="Verkkokauppa yritykselle kotimaiseen ja kansainväliseen kaupankäyntiin sekä joustavat kotisivut urheiluseuralle."/>
             <link rel="image_src" href="https://www.dataline.fi/assets/dataline-verkkokauppa-2k.jpg"/>
             <meta property="og:site_name" content="Dataline Group Oy"/>
@@ -24,7 +24,6 @@ const Home = () => (
             <meta name="twitter:image:alt" content="Verkkokauppa yritykselle ja kotisivut urheiluseuralle"/>
             <meta property="og:type" content="website"/>
             <link rel="icon" type="image/png" href="https://www.dataline.fi/favicon.png"/>
-            <link rel="icon" href="https://www.dataline.fi/favicon.ico" />
             <link rel="canonical" href="https://www.dataline.fi/"/>
             <meta name="format-detection" content="telephone=no"/>
             <link rel="alternate" type="application/atom+xml" href="https://github.com/tewdin/Dataline/commits/master.atom" title="Uusimmat päivitykset sivustolle"/>
