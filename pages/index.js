@@ -53,38 +53,50 @@ const Home = () => (
         <div id="palvelumme">
             <section id="verkkokaupat" className="pad clip1">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-4 r1 mb-4">
-                            <picture>
-                                <source srcset="/assets/dataline-verkkokaupat.webp" type="image/webp"/>
-                                <source srcset="/assets/dataline-verkkokaupat.jpg" type="image/jpeg"/>
-                                <img src="/assets/dataline-verkkokaupat.jpg" alt="Verkkokauppa yritykselle"/>
-                            </picture>
-                        </div>
-                        <div className="col-8 r1 mb-4"><div className="cell">
+                    <div className="row rr">
+                        <div className="col-8 r1"><div className="cell">
                             <h2 className="title">Verkkokauppa yritykselle</h2>
                             <p>Meille tärkeää on, että pääset nopeasti ja luotettavasti myymään tuotteitasi uudessa verkkokaupassa. Meiltä löytyy kaikki toiminnot, jotka tarvitset menestyvän verkkokaupan ylläpitämiseen ja kehitämme verkkokauppaa paremmaksi yhdessä asiakkaidemme kanssa. Verkkokauppaan on mahdollista myös integroida toiminnanohjausjärjestelmä, kuten esim. Lemonsoft.</p>
                             <p>Verkkokaupat teemme helppokäyttöisellä ja selkeällä ProcessWire-verkkokauppa-alustalla. Datalinen kotisivut ja verkkokauppa sopivat kaikille toimialoille ravintoloista vaatekauppoihin ja urheiluseuroista tukkukauppoihin.</p>
                             <p>Teemme verkkosivuja, joista olemme ylpeitä!</p>
                         </div></div>
+                        <div className="col-4 r1">
+                            <picture>
+                                <source media="(max-width: 450px)" srcset="/assets/palvelumme-verkkokaupat.webp" type="image/webp"/>
+                                <source media="(max-width: 768px)" srcset="/assets/palvelumme-verkkokaupat-768.webp" type="image/webp"/>
+                                <source media="(max-width: 1000px)" srcset="/assets/palvelumme-verkkokaupat-1000.webp" type="image/webp"/>
+                                <source media="(min-width: 1001px)" srcset="/assets/palvelumme-verkkokaupat.webp" type="image/webp"/>
+                                <source media="(max-width: 450px)" srcset="/assets/palvelumme-verkkokaupat.jpg" type="image/jpg"/>
+                                <source media="(max-width: 768px)" srcset="/assets/palvelumme-verkkokaupat-768.jpg" type="image/jpg"/>
+                                <source media="(max-width: 1000px)" srcset="/assets/palvelumme-verkkokaupat-1000.jpg" type="image/jpg"/>
+                                <source media="(min-width: 1001px)" srcset="/assets/palvelumme-verkkokaupat.jpg" type="image/jpg"/>
+                                <img src="/assets/palvelumme-verkkokaupat.jpg" alt="Verkkokauppa yritykselle"/>
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="urheiluseurat" className="pad clip2">
                 <div className="container">
-                    <div className="row rr">
-                        <div className="col-4 r1 mb-4">
-                            <picture>
-                                <source srcset="/assets/dataline-urheiluseurat.webp" type="image/webp"/>
-                                <source srcset="/assets/dataline-urheiluseurat.jpg" type="image/jpeg"/>
-                                <img src="/assets/dataline-urheiluseurat.jpg" alt="Verkkosivut urheiluseuralle"/>
-                            </picture>
-                        </div>
-                        <div className="col-8 r1 mb-4"><div className="cell">
+                    <div className="row">
+                        <div className="col-8 r1"><div className="cell">
                             <h2 className="title">Kotisivut urheiluseuralle</h2>
                             <p>Dataline tarjoaa urheiluseuroille monimuotoisen ja helposti päivitettävän urheilualustan. Kattavat perusominaisuudet sisältävät uutiset, joukkuetiedot, videot, kausittaiset ottelut, seuran statiikat, verkkokaupan, aitiovaraukset ja paljon muuta hyödyllistä. Kehitämme sivustoja urheiluseurojen tarpeiden mukaan ja lisäämme vuosittain uusia ominaisuuksia.</p>
                             <p>Kaipaako verkkosivut uudistusta? Ota rohkeasti yhteyttä!</p>
                         </div></div>
+                        <div className="col-4 r1">
+                            <picture>
+                                <source media="(max-width: 450px)" srcset="/assets/palvelumme-urheiluseurat.webp" type="image/webp"/>
+                                <source media="(max-width: 768px)" srcset="/assets/palvelumme-urheiluseurat-768.webp" type="image/webp"/>
+                                <source media="(max-width: 1000px)" srcset="/assets/palvelumme-urheiluseurat-1000.webp" type="image/webp"/>
+                                <source media="(min-width: 1001px)" srcset="/assets/palvelumme-urheiluseurat.webp" type="image/webp"/>
+                                <source media="(max-width: 450px)" srcset="/assets/palvelumme-urheiluseurat.jpg" type="image/jpg"/>
+                                <source media="(max-width: 768px)" srcset="/assets/palvelumme-urheiluseurat-768.jpg" type="image/jpg"/>
+                                <source media="(max-width: 1000px)" srcset="/assets/palvelumme-urheiluseurat-1000.jpg" type="image/jpg"/>
+                                <source media="(min-width: 1001px)" srcset="/assets/palvelumme-urheiluseurat.jpg" type="image/jpg"/>
+                                <img src="/assets/palvelumme-urheiluseurat.jpg" alt="Verkkokauppa yritykselle"/>
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -147,18 +159,19 @@ const Home = () => (
             *,
             :after,
             :before { box-sizing: border-box }
+            body,
+            h4 { font: 400 17px Montserrat }
             body {
                 width: 100vw;
                 overflow-x: hidden;
                 line-height: 1.5rem;
                 background-color: #2e3141
             }
-            body,
-            h4 { font: 400 18px Montserrat }
             h1,
             h2,
             h3,
-            #logo { font-weight: 800 }
+            #logo,
+            .btn { font-weight: 800 }
             body,
             a { color: #fff }
             #logo {
@@ -175,20 +188,29 @@ const Home = () => (
                 width: 100%;
                 height: 100%;
             }
+            #hero {
+                height: calc(100vh + 50px);
+                min-height: 800px;
+            }
+            #hero img {
+                object-fit: cover;
+                width: 100vw;
+                height: 100%;
+            }
             #caption { top: 0 }
             #caption h1 {
                 font-size: 4rem;
                 line-height: 4.4rem;
                 margin-bottom: 10px
             }
-            #caption p {
-                font-size: 1.4rem;
-                line-height: 1.8rem
+            #caption #sum {
+                font-size: 1.2rem;
+                line-height: 1.6rem
             }
             .title { font-size: 2.6rem }
-            p,
-            #palvelumme .title { margin-bottom: 15px }
+            p { margin-bottom: 15px }
             p:last-child { margin-bottom: 0 }
+            #palvelumme .title { margin-bottom: 25px }
             #asiakkaitamme .title,
             #yhteystiedot .title { margin-bottom: 3rem }
             #verkkokaupat { background-color: #4c5c96 }
@@ -255,12 +277,15 @@ const Home = () => (
             .btn { border-radius: 6px }
             img {
                 max-width: 100%;
-                height: auto
+                height: auto;
+                display: block
             }
             .btn {
+                font-size: 18px;
                 margin-right: 10px;
-                padding: 8px 25px;
-                border: 1px solid rgba(255,255,255,.4)
+                padding: 11px 30px;
+                border: 1px solid rgba(255,255,255,.4);
+                background-color: rgba(255,255,255,.05)
             }
             .btn:hover { background-color: #000 }
             h3 { font-size: 1.2rem }
@@ -303,6 +328,13 @@ const Home = () => (
                     left: 0;
                     padding: 0 10%
                 }
+                .col-4,
+                #palvelumme .container {
+                    padding: 0;
+                    width: 100%;
+                }
+                .col-8 { padding: 0 40px 60px }
+                #palvelumme .pad { padding-bottom: 0 }
             }
             @media screen and (max-width:860px){
                 .pad,
