@@ -188,10 +188,6 @@ const Home = () => (
                 width: 100%;
                 height: 100%;
             }
-            #hero {
-                height: calc(100vh + 50px);
-                min-height: 800px;
-            }
             #hero img {
                 object-fit: cover;
                 width: 100vw;
@@ -315,6 +311,10 @@ const Home = () => (
             @media screen and (min-width:1000px){
                 .clip1,
                 .clip2 { margin-top: -30px }
+                #hero {
+                    height: calc(100vh + 50px);
+                    min-height: 800px;
+                }
             }
             @media screen and (max-width:1000px){
                 .r1 {
@@ -335,6 +335,7 @@ const Home = () => (
                 }
                 .col-8 { padding: 0 40px 60px }
                 #palvelumme .pad { padding-bottom: 0 }
+                #hero { height: 100vh }
             }
             @media screen and (max-width:860px){
                 .pad,
