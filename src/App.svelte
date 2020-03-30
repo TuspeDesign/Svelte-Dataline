@@ -57,6 +57,7 @@
 
 <a id="logo" href="/" rel="home">
 	<source srcset="/images/dataline-logo.webp" type="image/webp">
+	<source srcset="/images/dataline-logo.png" type="image/png">
 	<img src="/images/dataline-logo.png" alt="Dataline Group Oy" width="135" height="27">
 </a>
 
@@ -101,6 +102,7 @@
 		<div class="col-4 r1">
 			<picture>
 				<source srcset={"/images/palvelumme-"+ item.id +"-320.webp"} type="image/webp">
+				<source srcset={"/images/palvelumme-"+ item.id +"-320.jpg"} type="image/jpeg">
 				<img class="img" src={"/images/palvelumme-"+ item.id +"-320.jpg"} alt={item.img_desc}>
 			</picture>
 		</div>
