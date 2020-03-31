@@ -145,7 +145,7 @@
 {/each}
 
 <section id="yhteystiedot" class="big tc">
-	<div class="container">
+	<div class="container py">
 		<h2>Yhteystiedot</h2>
 		<div id="yritys" class="rmb">
 			<h3>Dataline Group Oy</h3><p>Lehtikuusentie 5,<br>26100 Rauma<br>2354053-6</p>
