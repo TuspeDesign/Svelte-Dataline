@@ -4,6 +4,12 @@
   "description": "Official website of the company Dataline Group Oy built in Svelle.",
   "homepage": "https://www.dataline.fi",
   "bugs": "https://github.com/timoanttila/Dataline-Svelte/issues",
+  "license": "GNU GPL",
+  "keywords": [
+    "svelte",
+    "website",
+    "company"
+  ],
   "author": {
     "name": "Timo Anttila",
     "email": "timo@dataline.fi",
