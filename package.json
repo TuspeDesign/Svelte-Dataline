@@ -1,6 +1,7 @@
 {
   "name": "dataline",
   "version": "1.0.0",
+  "description": "Official website of the company Dataline Group Oy built in Svelle.",
   "author": {
     "name": "Timo Anttila",
     "email": "timo@dataline.fi",
