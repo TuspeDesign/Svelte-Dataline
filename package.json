@@ -1,6 +1,11 @@
 {
-  "name": "svelte-app",
+  "name": "dataline",
   "version": "1.0.0",
+  "author": {
+    "name": "Timo Anttila",
+    "email": "timo@dataline.fi",
+    "url": "https://timoanttila.com"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
