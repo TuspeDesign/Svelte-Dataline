@@ -5,15 +5,15 @@
 			id: "verkkokaupat",
 			img_desc: "",
 			desc: "<p>Meille tärkeää on, että pääset nopeasti ja luotettavasti myymään tuotteitasi uudessa verkkokaupassa. Meiltä löytyy kaikki toiminnot, jotka tarvitset menestyvän verkkokaupan ylläpitämiseen ja kehitämme verkkokauppaa paremmaksi yhdessä asiakkaidemme kanssa. Verkkokauppaan on mahdollista myös integroida toiminnanohjausjärjestelmä, kuten esim. Lemonsoft.</p><p>Verkkokaupat teemme helppokäyttöisellä ja selkeällä ProcessWire-verkkokauppa-alustalla. Datalinen kotisivut ja verkkokauppa sopivat kaikille toimialoille ravintoloista vaatekauppoihin ja urheiluseuroista tukkukauppoihin.</p><p>Teemme verkkosivuja, joista olemme ylpeitä!</p>",
-			row: "",
-			button: 1
+			button: 1,
+			bg: 1
 		}, {
 			title: "Kotisivut urheiluseuralle",
 			id: "urheiluseurat",
 			img_desc: "",
 			desc: "<p>Dataline tarjoaa urheiluseuroille monimuotoisen ja helposti päivitettävän urheilualustan. Kattavat perusominaisuudet sisältävät uutiset, joukkuetiedot, videot, kausittaiset ottelut, seuran statiikat, verkkokaupan, aitiovaraukset ja paljon muuta hyödyllistä. Kehitämme sivustoja urheiluseurojen tarpeiden mukaan ja lisäämme vuosittain uusia ominaisuuksia.</p><p>Kaipaako verkkosivut uudistusta? Ota rohkeasti yhteyttä!</p>",
-			row: " rr",
-			button: 0
+			button: 0,
+			bg: 2
 		}
 	]
 	let contact = [
@@ -96,43 +96,45 @@
 	</div>
 </div>
 
-<div class="bgw"><div class="container">
-	{#each sections as item}
-	<section id={item.id} class={"row"+ item.row}>
-		<div class="col-4 r1">
-			<picture>
-				<source srcset={"/images/palvelumme-"+ item.id +"-320.webp"} type="image/webp">
-				<source srcset={"/images/palvelumme-"+ item.id +"-320.jpg"} type="image/jpeg">
-				<img class="img" src={"/images/palvelumme-"+ item.id +"-320.jpg"} alt={item.img_desc}>
-			</picture>
-		</div>
-		<div class="col-8 r1">
-			<div class="cell">
-				<h2>{item.title}</h2>
-				{@html item.desc}
-				{#if item.button == 1}<div class="references"><button class="btn" on:click={() => references = item.id}>Referenssit</button></div>{/if}
-			</div>
-		</div>
-	</section>
-	{/each}
-
-	<section id="yhteystiedot">
-		<h2>Yhteystiedot</h2>
+{#each sections as item}
+<section id={item.id} class={"big bg"+ item.bg}>
+	<div class="container">
 		<div class="row">
-			<div id="yritys" class="col-4 r7">
-				<h3>Dataline Group Oy</h3><p>Lehtikuusentie 5,<br>26100 Rauma<br>2354053-6</p>
+			<div class="col-4 r1">
+				<picture>
+					<source srcset={"/images/palvelumme-"+ item.id +"-320.webp"} type="image/webp">
+					<source srcset={"/images/palvelumme-"+ item.id +"-320.jpg"} type="image/jpeg">
+					<img class="img" src={"/images/palvelumme-"+ item.id +"-320.jpg"} alt={item.img_desc}>
+				</picture>
 			</div>
+			<div class="col-8 r1">
+				<div class="cell">
+					<h2>{item.title}</h2>
+					{@html item.desc}
+					{#if item.button == 1}<div class="references"><button class="btn" on:click={() => references = item.id}>Referenssit</button></div>{/if}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{/each}
+
+<section id="yhteystiedot" class="big">
+	<div class="container">
+		<h2>Yhteystiedot</h2>
+		<div id="yritys" class="rmb">
+			<h3>Dataline Group Oy</h3><p>Lehtikuusentie 5,<br>26100 Rauma<br>2354053-6</p>
+		</div>
+		<div class="row">
 			{#each contact as item}
-			<div id={item.id} class="col-4 r7">
+			<div id={item.id} class="col-6 rmb">
 				<h3><a href={item.link} target="_blank" title={item.link_title} rel="noopener">{item.name}</a></h3>
-				<h4>{item.job}</h4>
-				<p><a href={"tel:"+ item.phone_link} rel="nofollow noopener">{item.phone}</a><br><a href={"mailto:"+ item.mail} rel="nofollow noopener">{item.email}</a></p>
-			</div>
+				<p>{item.job}<br><a href={"tel:"+ item.phone_link} rel="nofollow noopener">{item.phone}</a><br><a href={"mailto:"+ item.mail} rel="nofollow noopener">{item.email}</a></p>
+				</div>
 			{/each}
 		</div>
-	</section>
-
-</div></div>
+	</div>
+</section>
 
 <div id="bg">
 	<picture>
